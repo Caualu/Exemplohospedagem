@@ -1,0 +1,23 @@
+#paragrafopersonalizadado{
+    font-size: 30px;
+    color: aqua;
+
+
+}
+h1{
+     font-size: 80px;
+     color: brown;
+     background-color: beige;
+
+}
+#tituloespecial{
+    letter-spacing: 1mm;
+    font-size: italic;
+}
+p{
+    margin: 0%;
+}   
+img{
+    width:100px;
+    height: 300px;
+}
