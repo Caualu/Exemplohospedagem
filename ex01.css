@@ -1,0 +1,33 @@
+#paragrafopersonalizadado{
+    font-size: 30px;
+    color: rgb(17, 62, 240);
+   
+
+
+
+}
+h1{
+     font-size:100px;
+     color: rgb(17, 17, 16);
+     background-color: #eff3f3;
+     border-bottom-color:rgb(14, 129, 129);
+     text-align:center;
+}
+#tituloespecial{
+    letter-spacing: 1mm;
+    font-size: italic;
+}
+ 
+img{
+    width:450px;
+    height:350px;
+}
+
+body{
+    padding-left:10%;
+    padding-right: 10%;
+}
+body #img{
+    display: flex;
+    justify-content: space-around;
+}
