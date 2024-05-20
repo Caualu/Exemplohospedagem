@@ -1,0 +1,17 @@
+
+        /* Estilo padrão para todos os dispositivos */
+        body {
+            background-color: lightblue;
+        }
+
+        /* Estilo para telas com largura menor que 600px (por exemplo, telefones celulares) */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: lavender;
+            }
+        }
+
+        /* Estilo para telas com largura maior que 600px (por exemplo, tablets, laptops, desktops) */
+        @media screen and (min-width: 601px) {
+            body {
+                background-color: lightgreen;}}

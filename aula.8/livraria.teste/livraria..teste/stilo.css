@@ -1,9 +1,5 @@
-.card-container {
-    display: flex;
-    justify-content: space-between; /* Para distribuir o espaço igualmente entre os elementos */
-  }
-  
-  .card {
-    flex: 0 0 auto; /* Para garantir que as cartas não se estendam além de seu tamanho original */
-  }
-  
+body {
+  background-image: url(warriors.3.jpg); 
+  background-repeat: no-repeat; 
+  background-size: 100%; 
+  background-attachment: fixed;}
