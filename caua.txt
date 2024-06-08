@@ -1,0 +1,6 @@
+Currículo:
+Nome: caua
+Idade: 18
+Experiência: vendas
+Habilidades: balconista
+
