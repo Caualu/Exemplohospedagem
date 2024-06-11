@@ -1,0 +1,14 @@
+Cadastro:
+Nome: caua
+sobrenome: luiz
+Idade: 18
+cpf: 44535345
+email: @ndjdnfer
+
+Cadastro:
+Nome: luiz
+sobrenome: silva
+Idade: 90
+cpf: 587583
+email: @jiregn
+
