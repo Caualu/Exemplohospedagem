@@ -42,3 +42,15 @@ INSERT INTO Funcionarios (nome, cargo, salario, departamento_id) VALUES
 
 
 
+Passo 6 
+
+SELECT Funcionarios.nome , Funcionarios.cargo, Funcionarios.salario, Departamentos.nome as departamento
+FROM Funcionarios
+JOIN Departamentos ON Funcionarios.departamento_id = Departamentos.id;
+
+
+SELECT Funcionarios.nome AS Funcionarios, Funcionarios.cargo, Departamentos.nome AS Departamentos
+from Funcionarios
+JOIN Departamentos ON Funcionarios.departamento_id = Departamentos.id where Departamentos.nome = 'TI'
+
+para chamar somente quem trabalha no depatamento de TI
