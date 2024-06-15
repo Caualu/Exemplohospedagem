@@ -1,0 +1,44 @@
+Passo 1
+
+CREATE TABLE Departamentos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100)
+);
+
+Passo 2
+
+INSERT INTO Departamentos (nome) VALUES
+('Recursos Humanos'),
+('TI'),
+('Marketing');
+
+Passo 3
+
+CREATE TABLE Funcionarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    cargo VARCHAR(50),
+    salario DECIMAL(10, 2),
+    departamento_id INT,
+    FOREIGN KEY (departamento_id) REFERENCES Departamentos(id)
+);
+
+Passo 4
+
+INSERT INTO Departamentos (nome) VALUES
+('Recursos Humanos'),
+('TI'),
+('Marketing');
+
+
+Passo 5
+
+INSERT INTO Funcionarios (nome, cargo, salario, departamento_id) VALUES
+('Ana Silva', 'Analista', 3000.00, 1),
+('Carlos Oliveira', 'Desenvolvedor', 5000.00, 2),
+('Beatriz Santos', 'Gerente', 7000.00, 1),
+('Daniel Costa', 'Designer', 4000.00, 3),
+('Elaine Ferreira', 'Suporte Técnico', 3500.00, 2);
+
+
+
