@@ -42,7 +42,7 @@ def jogar_pvm():
     escolha_usuario = obter_escolha_usuario("Usuário")  # Obtém a escolha do usuário
     escolha_computador = obter_escolha_computador()  # Obtém a escolha do computador
     print(f"Você escolheu: {escolha_usuario}")  # Exibe a escolha do usuário
-    print(f"O computador escolheu: {escolha_computador}")  # Exibe a escolha do computador
+    print(f"O computador escolheu: {escolha_computador}")  # Exibe a escolha do computadorB
     resultado = determinar_vencedor(escolha_usuario, escolha_computador)  # Determina o vencedor
     print(resultado)  # Exibe o resultado
 
