@@ -11,13 +11,15 @@
     <!--bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--fim do bootstrap icons-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <title>Agencia CLS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
      
     <header>
-        <div class="interface ">
+        <div class="interface">
              <div class="logo">
                <a href="#">
                  <img src="images/loggo.png" alt="logo da agencia">
@@ -26,10 +28,12 @@
         
         <nav class="menu-desktop">
             <ul>
-                <li><a href="#">inicio</a></li>
-                <li><a href="#">especialidades</a></li>
-                <li><a href="#">sobre</a></li>
-                <li><a href="#">carrinho</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Prato</a></li>
+                <li><a href="#">Talher</a></li>
+                <li><a href="#">Taças</a></li>
+                <li><a href="#">Toalhas</a></li>
+                
 
             </ul>
  
@@ -37,7 +41,7 @@
 
         <div class="btn-contato">
             <a href="#">
-                <button>Contato</button>
+                <button>Carrinho</button>
             </a>
         </div>
 
@@ -49,19 +53,19 @@
             <div class="interface">
                 <div class="flex">
                 <div class="txt-topo-site">
-                    <h1>Très Chique Mesa Posta<span>!</span></h1>
+                    <h1>Très Chic Mesa Posta<span>!</span></h1>
                 
                 <div class="img-topo-site">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cum nobis reprehenderit delectus fugit maiores quia cumque consequuntur veritatis maxime mollitia fuga praesentium quisquam illo eaque dolores, eligendi nam animi.</p>
                     <div class="btn-contato">
                         <a href="#">
-                            <button>entre em contato</button>
+                            <button>Redes Sociais</button>
                         </a>
                     </div>
                 </div>
                 </div>
                 <div class="img-topo-site">
-                    <img src="C:\Users\Usuário\OneDrive\Documentos\exemplohospedagem\Exemplohospedagem\treechiq\images\lane.png" alt="flutuante">
+                    <img src="./images/lane.png" alt="flutuante">
                 </div>
             </div>
             </div>
@@ -69,21 +73,21 @@
         
         <section class="especialidades">
             <div class="interface">
-                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <h2 class="titulo">Nossos <span>Modelos.</span></h2>
                 <div class="flex">
                     <div class="especialidades-box">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Website</h3>
+                        <i class="bi bi-cart"></i>
+                        <h3>acessórios</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, maiores.</p>
                     </div>
                     <div class="especialidades-box">
                         <i class="bi bi-cart"></i>
-                        <h3>Loja On-line</h3>
+                        <h3>Roupas</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, maiores.</p>
                     </div>
                     <div class="especialidades-box">
-                        <i class="bi bi-wordpress"></i>
-                        <h3>Blog</h3>
+                        <i class="bi bi-cart"></i>
+                        <h3>Calçados</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, maiores.</p>
                     </div>
                 </div><!--flex-->
@@ -97,13 +101,13 @@
                         <img src="C:\Users\Usuário\OneDrive\Documentos\exemplohospedagem\Exemplohospedagem\treechiq\images\chichichi.png" alt="">
                     </div>
                     <div class="txt-sobre">
-                        <h2>MUITO PRAZER, <span>SOMOS WARRIORS.</span></h2>
+                        <h2>MUITO PRAZER, <span>SOMOS Très Chic Mesa Posta.</span></h2>
                         <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis esse assumenda consequatur repudiandae aliquid magni recusandae voluptatum officia cupiditate fuga! Corporis repellat id nostrum, eveniet minima blanditiis tempora accusamus aut!</P>    
                         <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, hic. Eligendi repellendus quam nemo, dolores qui ex aspernatur temporibus natus, expedita quidem voluptas magni laboriosam pariatur laudantium itaque. Eaque tenetur dignissimos magni provident. Omnis aperiam quam in natus voluptate esse.</P>
                         <div class="btn-social">
                             <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="#"><button><i class="bi bi-youtube"></i></button></a>
-                            <a href="#"><button><i class="bi bi-tiktok"></i></button></a>
+                            <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href="#"><button><i class="bi bi-twitter"></i></button></a>
                         </div>
                     </div>
                 </div>
@@ -112,5 +116,79 @@
     </main>
 
 
+
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produtos em Destaque</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <section class="destaques">
+            <div class="interface">
+                <h2 class="titulo">Produtos em Destaque</h2>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="{{ url_for('static', filename='images/produto1.jpg') }}" alt="Produto 1">
+                        <h3>Produto 1</h3>
+                        <p>Descrição breve do Produto 1.</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ url_for('static', filename='images/produto2.jpg') }}" alt="Produto 2">
+                        <h3>Produto 2</h3>
+                        <p>Descrição breve do Produto 2.</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ url_for('static', filename='images/produto3.jpg') }}" alt="Produto 3">
+                        <h3>Produto 3</h3>
+                        <p>Descrição breve do Produto 3.</p>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                    <!-- Adicione mais itens conforme necessário -->
+                </div>
+            </div>
+        </section>
+    </body>
+    </html>
+    
+    
+
 </body>
+
+
+<script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
 </html>
